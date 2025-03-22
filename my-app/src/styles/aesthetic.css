@@ -1,0 +1,238 @@
+
+/* Aesthetic theme */
+body {
+  background-color: #f8f3ff;
+  color: #494158;
+}
+
+.aesthetic-theme .header, 
+.header {
+  background-color: #e2d5f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(167, 142, 211, 0.15);
+  padding: 2rem;
+}
+
+.aesthetic-theme h1, 
+h1 {
+  color: #6c4ba0;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.aesthetic-theme .section-title,
+.section-title {
+  color: #6c4ba0;
+  font-family: 'Georgia', serif;
+  border-bottom-color: #e2d5f8;
+}
+
+.aesthetic-theme .login-form-container,
+.login-form-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(124, 105, 170, 0.12);
+}
+
+.aesthetic-theme .form-input,
+.form-input {
+  border: 1px solid #d9c8f1;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.aesthetic-theme .form-input:focus,
+.form-input:focus {
+  outline: none;
+  border-color: #a388d8;
+  box-shadow: 0 0 0 3px rgba(163, 136, 216, 0.1);
+}
+
+.aesthetic-theme .login-button,
+.login-button {
+  background-color: #a388d8;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.aesthetic-theme .login-button:hover,
+.login-button:hover {
+  background-color: #8e71c5;
+}
+
+.aesthetic-theme .login-error,
+.login-error {
+  background-color: #feeef4;
+  color: #e35c8d;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.aesthetic-theme .new-account,
+.new-account {
+  color: #7c69aa;
+}
+
+.aesthetic-theme .new-account a,
+.new-account a {
+  color: #6c4ba0;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.aesthetic-theme .google-login-button,
+.google-login-button {
+  margin-top: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(124, 105, 170, 0.1);
+  border: 1px solid #dcd1f3;
+  border-radius: 8px;
+  color: #6c4ba0;
+}
+
+.aesthetic-theme .google-login-button:hover,
+.google-login-button:hover {
+  background-color: #f8f5ff;
+}
+
+.aesthetic-theme .column,
+.column {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(124, 105, 170, 0.09);
+}
+
+.aesthetic-theme .contact-section,
+.contact-section {
+  background-color: #f0e9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(124, 105, 170, 0.09);
+}
+
+.aesthetic-theme .style-dropdown-button,
+.style-dropdown-button {
+  background-color: #f0e9fc;
+  border: 1px solid #d9c8f1;
+  color: #6c4ba0;
+}
+
+.aesthetic-theme .style-dropdown-item,
+.style-dropdown-item {
+  color: #6c4ba0;
+}
+
+.aesthetic-theme .style-dropdown-item:hover,
+.style-dropdown-item:hover {
+  background-color: #f0e9fc;
+}
+
+.aesthetic-theme .style-dropdown-item.active,
+.style-dropdown-item.active {
+  background-color: #e2d5f8;
+  font-weight: 600;
+}
+
+/* Registration Dialog */
+.aesthetic-theme .register-dialog,
+.register-dialog {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(124, 105, 170, 0.15);
+  border-radius: 12px;
+  border: 1px solid #e2d5f8;
+}
+
+.aesthetic-theme .field-label,
+.field-label {
+  color: #6c4ba0;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.aesthetic-theme .date-picker-button,
+.date-picker-button {
+  background-color: #ffffff;
+  border: 1px solid #d9c8f1;
+  border-radius: 8px;
+  color: #6c4ba0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+}
+
+.aesthetic-theme .date-placeholder,
+.date-placeholder {
+  color: #9a85c9;
+}
+
+.aesthetic-theme .calendar-icon,
+.calendar-icon {
+  color: #9a85c9;
+}
+
+.aesthetic-theme .date-picker-content,
+.date-picker-content {
+  background-color: #ffffff;
+  border: 1px solid #e2d5f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(124, 105, 170, 0.15);
+}
+
+.aesthetic-theme .register-button,
+.register-button {
+  background-color: #a388d8;
+  color: white;
+}
+
+.aesthetic-theme .register-button:hover,
+.register-button:hover {
+  background-color: #8e71c5;
+}
+
+.aesthetic-theme .cancel-button,
+.cancel-button {
+  background-color: #f0e9fc;
+  color: #6c4ba0;
+  border: 1px solid #d9c8f1;
+}
+
+.aesthetic-theme .cancel-button:hover,
+.cancel-button:hover {
+  background-color: #e2d5f8;
+}
+
+/* Variant4 specific aesthetic styles */
+.variant4 .minimal-header h1 {
+  color: #6c4ba0;
+  font-family: 'Georgia', serif;
+}
+
+.variant4 .grid-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(124, 105, 170, 0.09);
+}
+
+.variant4 .navigate-button button {
+  background-color: #a388d8;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.variant4 .navigate-button button:hover {
+  background-color: #8e71c5;
+}
+
+.feature-bullet {
+  color: #a388d8;
+}

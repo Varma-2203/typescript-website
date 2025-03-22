@@ -1,0 +1,377 @@
+
+/* Base styles shared across all themes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.login-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Section Titles & Headers */
+h1, h2, h3 {
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Style Selector */
+.style-selector-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.style-selector {
+  display: flex;
+  align-items: center;
+}
+
+.style-dropdown-button {
+  min-width: 150px;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.style-dropdown-content {
+  min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.style-dropdown-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.style-dropdown-item.active {
+  font-weight: 600;
+}
+
+/* Layout */
+.three-column-layout {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.column {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #9e9e9e;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-error {
+  color: #e53935;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(229, 57, 53, 0.1);
+}
+
+/* Account Options */
+.account-options {
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.new-account {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.new-account a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.google-login-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.google-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Features Section */
+.features-list {
+  list-style-type: none;
+}
+
+.features-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.feature-bullet {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  flex: 2;
+}
+
+.contact-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image {
+  max-width: 120px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.email-icon {
+  margin-right: 5px;
+}
+
+/* Registration Form */
+.register-dialog {
+  border-radius: 8px;
+  padding: 1.5rem !important;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 1.5rem !important;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.register-input {
+  padding: 0.85rem;
+  font-size: 1rem;
+}
+
+.date-picker-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem;
+  border-radius: 6px;
+}
+
+.date-placeholder {
+  opacity: 0.7;
+}
+
+.date-picker-content {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.register-error {
+  color: #e53935;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(229, 57, 53, 0.1);
+}
+
+.register-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.register-button {
+  flex: 1;
+  padding: 0.85rem;
+  font-weight: 600;
+}
+
+.cancel-button {
+  flex: 1;
+}
+
+/* Variant 4 Specific Styles */
+.variant4 .minimal-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.variant4 .minimal-header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.variant4 .grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.variant4 .grid-item {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.variant4 .grid-item.left-content {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.variant4 .grid-item.right-content {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.variant4 .grid-item.contact {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.variant4 .about-wrapper,
+.variant4 .features-wrapper {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.navigate-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .variant4 .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .variant4 .grid-item.left-content,
+  .variant4 .grid-item.right-content,
+  .variant4 .grid-item.contact {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

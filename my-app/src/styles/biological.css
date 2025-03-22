@@ -1,0 +1,202 @@
+
+/* Biological theme */
+body {
+  background-color: #f2f8f0;
+  color: #354f3c;
+}
+
+.header {
+  background-color: #deebd9;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(53, 79, 60, 0.1);
+  padding: 2rem;
+}
+
+.header h1 {
+  color: #2d6a4f;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.login-form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(53, 79, 60, 0.08);
+  border: 1px solid #e6f2e9;
+}
+
+.login-form-container h2 {
+  color: #2d6a4f;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-input {
+  border: 1px solid #c5e1ca;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: #fbfdfb;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #74c686;
+  box-shadow: 0 0 0 3px rgba(116, 198, 134, 0.1);
+}
+
+.login-button {
+  background-color: #40916c;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #2d6a4f;
+}
+
+.login-error {
+  background-color: #fae8e8;
+  color: #d35555;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.account-options {
+  margin-top: 2rem;
+}
+
+.new-account {
+  color: #40916c;
+}
+
+.new-account a {
+  color: #2d6a4f;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.google-login-button {
+  margin-top: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(53, 79, 60, 0.1);
+  border: 1px solid #c5e1ca;
+  border-radius: 6px;
+  color: #2d6a4f;
+}
+
+.google-login-button:hover {
+  background-color: #f7fbf8;
+}
+
+.column {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(53, 79, 60, 0.08);
+  border: 1px solid #e6f2e9;
+}
+
+.about-section h2, .features-section h2 {
+  color: #2d6a4f;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.contact-section {
+  background-color: #eaf5ed;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(53, 79, 60, 0.08);
+}
+
+.style-option {
+  background-color: #deebd9;
+  color: #2d6a4f;
+  font-weight: 500;
+}
+
+.style-option:hover {
+  background-color: #c9e1c4;
+}
+
+.style-option.active {
+  background-color: #40916c;
+  color: white;
+}
+
+/* Styles for the registration dialog */
+.register-dialog {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(53, 79, 60, 0.15);
+  border-radius: 10px;
+  border: 1px solid #e6f2e9;
+}
+
+.form-field {
+  margin-bottom: 1.2rem;
+}
+
+.form-field label {
+  color: #2d6a4f;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.date-picker-button {
+  background-color: #fbfdfb;
+  border: 1px solid #c5e1ca;
+  border-radius: 6px;
+  color: #2d6a4f;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+}
+
+.date-placeholder {
+  color: #74a981;
+}
+
+.calendar-icon {
+  color: #74a981;
+  margin-left: 10px;
+}
+
+.date-picker-content {
+  background-color: #ffffff;
+  border: 1px solid #e6f2e9;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(53, 79, 60, 0.15);
+}
+
+.register-error {
+  background-color: #fae8e8;
+  color: #d35555;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.register-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.register-button {
+  background-color: #40916c;
+  color: white;
+  flex: 1;
+}
+
+.register-button:hover {
+  background-color: #2d6a4f;
+}

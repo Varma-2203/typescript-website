@@ -1,0 +1,88 @@
+
+/* Clean Theme - Minimalistic and crisp */
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding: 2rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #212529;
+}
+
+.header p {
+  color: #6c757d;
+}
+
+.column {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #212529;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.75rem;
+}
+
+.form-input {
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: #adb5bd;
+  outline: none;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #0069d9;
+}
+
+.new-account a {
+  color: #007bff;
+}
+
+.google-login-button {
+  border: 1px solid #ced4da;
+  color: #495057;
+}
+
+.google-login-button:hover {
+  background-color: #f8f9fa;
+}
+
+.feature-bullet {
+  color: #007bff;
+}
+
+.contact-section {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+}
+
+.style-option {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.style-option.active {
+  background-color: #007bff;
+  color: white;
+}
