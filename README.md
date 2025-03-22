@@ -22,3 +22,6 @@ npm install @radix-ui/react-separator
 npm install @radix-ui/react-slider next-themes sonner @radix-ui/react-switch @radix-ui/react-tabs @radix-ui/react-toast
 npm install @radix-ui/react-toggle-group @radix-ui/react-toggle @radix-ui/react-tooltip 
 npm install tailwind-merge
+npm install csv-parser
+npm install google-auth-library
+npm install axios @react-oauth/google

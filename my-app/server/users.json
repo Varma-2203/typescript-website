@@ -1,8 +1,14 @@
-
 [
   {
+    "username": "Keerthi",
+    "email": "keerthi@gmail.com",
+    "password": "12345678",
+    "dob": "15-10-2003"
+  },
+  {
     "username": "Varma",
-    "password": "Varma1",
-    "email": "varma@example.com"
+    "email": "varma@gmail.com",
+    "password": "12345",
+    "dob": "22-03-2000"
   }
 ]

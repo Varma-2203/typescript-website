@@ -1,6 +1,7 @@
 
 import React from 'react';
 import GoogleIcon from '../../assets/google-icon.svg';
+import GoogleAuth from './GoogleAuth';
 
 const GoogleLoginButton: React.FC = () => {
   return (

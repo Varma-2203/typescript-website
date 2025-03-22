@@ -8,8 +8,11 @@ import ContactSection from '../components/ContactSection';
 import StyleSelector from '../components/StyleSelector';
 import { Button } from '../components/ui/button';
 import { toast } from "../components/ui/use-toast";
+import axios from "axios";
 
 import '../styles/base.css';
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;; 
 
 const styleOptions = [
   { id: 'clean', name: 'Clean' },
@@ -62,36 +65,30 @@ const LoginVariant4: React.FC = () => {
     setActiveStyle(styleId);
   };
 
-  const handleLogin = async (email: string, password: string) => {
+  const handleLogin = async(email: string, password: string) => {
+    console.log("Login button clicked");
     try {
-      const response = await fetch('http://localhost:3001/api/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        // Login successful
-        toast({
-          title: "Login successful",
-          description: "Welcome back!",
-        });
-        setLoginError(null);
-        navigate('/database');
-      } else {
-        // Login failed
-        setLoginError(data.message || 'Login failed');
-        toast({
-          variant: "destructive",
-          title: "Login failed",
-          description: data.message || "Invalid credentials",
-        });
-      }
-    } catch (error) {
+        const response = await axios.post(`${BACKEND_URL}/login`, { email, password });
+        const data = response.data
+        if (data.login) {
+          // Login successful
+          toast({
+            title: "Login successful",
+            description: "Welcome back!",
+          });
+          setLoginError(null);
+          console.log("Navigating to:", '/SNPDatabase');
+          navigate('/database');    // navigate('/SNPDatabase');
+        } else {
+          // Login failed
+          setLoginError(data.message || 'Login failed');
+          toast({
+            variant: "destructive",
+            title: "Login failed",
+            description: data.message || "Invalid credentials",
+          });
+        }            
+    }catch (error) {
       console.error('Login error:', error);
       setLoginError('Network error. Please try again.');
       toast({
@@ -100,26 +97,18 @@ const LoginVariant4: React.FC = () => {
         description: "Network error. Please try again.",
       });
     }
-  };
+    // In a real app, you would validate credentials here
+    
+};
 
   const handleRegister = async (username: string, email: string, password: string, dob: Date) => {
     try {
-      const response = await fetch('http://localhost:3001/api/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          username, 
-          email, 
-          password, 
-          dob: dob.toISOString() 
-        }),
-      });
+      dob.toISOString() 
+      const response = await axios.post(`${BACKEND_URL}/register`, { username, email, password, dob });
 
-      const data = await response.json();
+      const data = response.data;
 
-      if (response.ok) {
+      if (data.login) {
         // Registration successful
         toast({
           title: "Registration successful",
