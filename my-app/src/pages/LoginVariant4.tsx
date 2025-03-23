@@ -6,7 +6,7 @@ import AboutSection from '../components/AboutSection';
 import FeaturesSection from '../components/FeaturesSection';
 import ContactSection from '../components/ContactSection';
 import StyleSelector from '../components/StyleSelector';
-import { Button } from '../components/ui/button';
+// import { Button } from '../components/ui/button';
 import { toast } from "../components/ui/use-toast";
 import axios from "axios";
 
@@ -169,10 +169,10 @@ const LoginVariant4: React.FC = () => {
           <ContactSection />
         </div>
       </div>
-      
+{/*       
       <div className="navigate-button">
         <Button onClick={() => navigate('/database')}>Go to Dashboard</Button>
-      </div>
+      </div> */}
     </div>
   );
 };

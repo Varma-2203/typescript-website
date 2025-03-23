@@ -19,7 +19,7 @@ function GoogleAuth() {
         token: response.credential,
       });
       alert(`Welcome ${res.data.name}`);
-      navigate("/SNPDatabase");
+      navigate("/database");
     } catch (error) {
       console.error("Google Sign-In Failed", error);
     }
